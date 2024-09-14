@@ -1,0 +1,29 @@
+@import "../../../app/styles/color-theme.scss";
+
+.card {
+  width: 60vw; /* ボックスの幅 */
+  height: 70vh; /* ボックスの高さ */
+  background-color: $background-color; /* ボックスの背景色 */
+  border-radius: 16px; /* 角を丸くする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 少し影をつけて立体感を出す */
+  border: 1px solid #ccc; /* 薄いグレーの境界線 */
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-template-rows: 100px auto 60px; /* 各行の高さを指定 */
+  gap: 10px; /* 行の間隔 */
+
+  & &__title {
+    font-size: xx-large;
+    margin-left: 24px;
+  }
+
+  & &__content {
+    margin-left: 24px;
+  }
+
+  & &__footer {
+    margin: auto;
+  }
+}
