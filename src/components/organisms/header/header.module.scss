@@ -1,0 +1,52 @@
+// styles/Header.module.scss
+@import "../../../app/styles/color-theme.scss";
+
+.header {
+  background-color: $background-color;
+  padding: 0;
+  height: 100vh; // 画面全体の高さ
+  display: flex;
+  align-items: flex-end; // テキストを下に配置
+
+  &__content {
+    flex: 1;
+    margin-bottom: 15%;
+    margin-left: 10%;
+  }
+
+  &__background {
+    position: relative;
+    flex: 1; /* 左側に50%の幅を与える */
+    margin: auto;
+    margin-right: 10%;
+    overflow: hidden;
+    height: 60vh;
+  }
+
+  &__image {
+    width: auto;
+    height: auto;
+    /* グラデーションをマスクとして適用 */
+    -webkit-mask-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    mask-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $font-primary-color;
+}

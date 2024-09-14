@@ -4,6 +4,7 @@
   width: 60vw; /* ボックスの幅 */
   height: 70vh; /* ボックスの高さ */
   background-color: $background-color; /* ボックスの背景色 */
+  color: $font-primary-color;
   border-radius: 16px; /* 角を丸くする */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 少し影をつけて立体感を出す */
   border: 1px solid #ccc; /* 薄いグレーの境界線 */
