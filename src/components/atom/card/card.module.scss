@@ -2,7 +2,7 @@
 
 .card {
   width: 60vw; /* ボックスの幅 */
-  height: 70vh; /* ボックスの高さ */
+  // height: 50vh; /* ボックスの高さ */
   background-color: $background-color; /* ボックスの背景色 */
   color: $font-primary-color;
   border-radius: 16px; /* 角を丸くする */
@@ -14,17 +14,27 @@
   display: grid;
   grid-template-rows: 100px auto 60px; /* 各行の高さを指定 */
   gap: 10px; /* 行の間隔 */
+  font-family: $jetbrains-mono;
 
   & &__title {
     font-size: xx-large;
     margin-left: 24px;
   }
 
+  & &__picture {
+    width: 50px;
+    height: 50px;
+  }
+
   & &__content {
     margin-left: 24px;
+    margin-right: 24px;
   }
 
   & &__footer {
-    margin: auto;
   }
+}
+.picture {
+  width: 50px;
+  height: 50px;
 }

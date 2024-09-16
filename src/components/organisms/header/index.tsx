@@ -28,13 +28,8 @@ const Header = () => {
         <NavLink />
       </div>
       <div className={styles.header__background}>
-        <Image
-          src="/header-bg-light.svg"
-          alt="bg-image"
-          fill
-          objectFit="cover"
-          className={styles.header__image}
-        />
+        <div className={styles.header__gradient}></div>
+        <div className={styles.header__gradient_cover}></div>
       </div>
     </header>
   );

@@ -5,4 +5,36 @@
   font-size: 2.5rem;
   color: $font-primary-color;
   font-family: "JetBrains Mono", monospace;
+
+  & &__contentAnimation {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    background-color: $background-color;
+    overflow: hidden;
+  }
+
+  //   & &__contentAnimation::after {
+  //     position: absolute;
+  //     content: "";
+  //     top: 0;
+  //     left: 0;
+  //     display: inline-block;
+  //     width: auto;
+  //     background-color: $background-color;
+  //     z-index: -1;
+  //     animation-name: box_slide;
+  //     animation-duration: 0.5s;
+  //     animation-fill-mode: forwards;
+  //     transform: translateX(-100%);
+  //   }
+  // }
+
+  // @keyframes box_slide {
+  //   0% {
+  //     transform: translate(-100%, 0);
+  //   }
+  //   100% {
+  //     transform: translate(0, 0);
+  //   }
 }

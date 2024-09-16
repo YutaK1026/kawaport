@@ -18,35 +18,79 @@
     position: relative;
     flex: 1; /* 左側に50%の幅を与える */
     margin: auto;
-    margin-right: 10%;
+  }
+  & &__gradient {
+    height: 40vh;
+    width: 30vw;
     overflow: hidden;
-    height: 60vh;
+    border-radius: 12rem;
+    background: radial-gradient(
+        ellipse at 50% 50%,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      radial-gradient(ellipse at 70% 60%, #c3e060 0%, rgba(195, 224, 96, 0) 90%),
+      radial-gradient(ellipse at 30% 30%, #c3e060 0%, rgba(195, 224, 96, 0) 60%),
+      radial-gradient(
+        ellipse at bottom left,
+        #00a3cb 0%,
+        rgba(0, 163, 203, 0) 70%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(18, 46, 119, 0) 0%,
+        rgba(18, 46, 119, 0) 75%,
+        #122e77 100%
+      ),
+      linear-gradient(
+        to right,
+        #625793 0%,
+        #d55d64 35%,
+        #e49129 65%,
+        #c0671c 100%
+      );
+    background-blend-mode: overlay, luminosity, color-dodge, saturation, screen,
+      color;
+    filter: blur(35px);
   }
 
-  &__image {
-    width: auto;
-    height: auto;
-    /* グラデーションをマスクとして適用 */
-    -webkit-mask-image: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 1) 60%,
-      rgba(0, 0, 0, 0) 100%
-    );
-
-    mask-image: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 1) 60%,
-      rgba(0, 0, 0, 0) 100%
-    );
+  & &__gradient_cover {
+    position: absolute;
+    top: -80px;
+    height: 30vh;
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 12rem;
+    background: radial-gradient(
+        77.73% 77.73% at 98.52% 96.25%,
+        #f98bda 0%,
+        rgba(128, 76, 239, 0.29) 50.52%,
+        rgba(91, 216, 216, 0) 100%
+      ),
+      radial-gradient(
+        141.73% 105.23% at 50% -7.16%,
+        #e1f8ff 0%,
+        rgba(160, 198, 255, 0) 50.73%,
+        rgba(162, 147, 255, 0) 100%
+      ),
+      radial-gradient(
+        112.27% 48.54% at 1.59% 50%,
+        rgba(255, 130, 227, 0.5) 0%,
+        rgba(255, 123, 234, 0.095) 53.91%,
+        rgba(254, 216, 255, 0) 100%
+      ),
+      linear-gradient(153.07deg, #8177f3 6.37%, rgba(255, 230, 166, 0) 83.82%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal;
+    filter: blur(35px);
   }
-}
 
-.logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 24px;
-  font-size: 24px;
-  font-weight: bold;
-  color: $font-primary-color;
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $font-primary-color;
+  }
 }

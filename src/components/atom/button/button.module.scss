@@ -1,0 +1,11 @@
+@import "../../../app/styles/color-theme.scss";
+
+.button {
+  color: $font-primary-color;
+  font-family: $jetbrains-mono;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
