@@ -1,0 +1,19 @@
+.slick-prev::before {
+  color: black !important;
+}
+
+.slick-next::before {
+  color: black !important;
+}
+
+.slick-slide {
+  aspect-ratio: 16 / 10 !important;
+}
+
+.slick-active {
+  aspect-ratio: 16 / 10 !important;
+}
+
+.slick-current {
+  aspect-ratio: 16 / 10 !important;
+}
