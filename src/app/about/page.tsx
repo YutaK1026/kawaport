@@ -1,8 +1,13 @@
+"use client";
+
 import Page from "@/components/template/page-template";
 import { NavLink } from "@/components/organisms/header/atom/nav";
 import styles from "./about.module.scss";
 import Image from "next/image";
 import profilePic from "@/public/kawachan.png";
+import Footer from "@/components/organisms/footer";
+import Experiences from "@/components/organisms/experience";
+import data from "./experiences.json";
 
 const About = () => {
   return (
@@ -22,7 +27,7 @@ const About = () => {
                 width: "auto",
                 height: "auto",
                 maxHeight: "500px",
-                maxWidth: "800px",
+                maxWidth: "500px",
                 borderRadius: "10px",
               }}
             />
@@ -31,7 +36,7 @@ const About = () => {
             <div className={styles.container__content}>
               <Page.SubTitle>自己紹介</Page.SubTitle>
               <Page.SubContent>
-                初めまして、私の名前は河村悠太です。
+                初めまして、私の名前は河村悠太です。2002年10月26日生まれです。
                 <br />
                 名古屋大学情報学部コンピュータ科学科知能システム系4年に所属しており、名古屋大学情報学部森研究室にて医療画像*AIに関する研究をしています。
                 <br />
@@ -53,7 +58,12 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Page.SubTitle>経歴</Page.SubTitle>
+        <Page.SubContent>
+          <Experiences experiences={data} />
+        </Page.SubContent>
       </Page.Content>
+      <Footer />
     </Page>
   );
 };

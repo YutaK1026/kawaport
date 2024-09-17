@@ -1,6 +1,7 @@
 .container {
   display: flex;
   height: 100%; /* 親に依存した高さ */
+  margin-bottom: 5%;
 
   & &__left {
     flex: 2; /* 左側を2に設定（2/5） */
