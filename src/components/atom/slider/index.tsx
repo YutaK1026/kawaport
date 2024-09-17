@@ -23,7 +23,7 @@ export const ImageSlider = ({ images }: SlidersProps) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     adaptiveHeight: true,
   };
   return (
@@ -34,19 +34,7 @@ export const ImageSlider = ({ images }: SlidersProps) => {
             <Image
               src={image.src}
               alt={image.alt}
-              // layout={"fill"}
-              // objectFit={"cover"}
               className={styles.image__box}
-
-              // style={{
-              //   width: "auto",
-              //   height: "auto",
-              //   // aspectRatio: 16 / 10,]
-              //   // objectFit: "contain",
-              //   // maxWidth: 590,
-              //   position: "relative",
-              //   // width: "auto",
-              // }}
             />
           );
         })}

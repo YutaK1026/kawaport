@@ -8,12 +8,12 @@ interface CardProps {
 }
 
 const Card = ({ children }: CardProps) => {
-  useGSAP(() => {
-    gsap.to(".container", {
-      // TODO: ここに、フェードイン、フェードアウトのアニメーションを実装する
-      // ex: rotation: "+360",
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.to(".container", {
+  //     // TODO: ここに、フェードイン、フェードアウトのアニメーションを実装する
+  //     // ex: rotation: "+360",
+  //   });
+  // });
 
   return (
     <div className="container">

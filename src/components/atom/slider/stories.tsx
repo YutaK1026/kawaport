@@ -17,7 +17,7 @@ const data: Images[] = [
     name: "hyoka",
   },
   {
-    src: hyoka,
+    src: code_duel,
     url: "",
     alt: "code_duel",
     name: "code_duel",

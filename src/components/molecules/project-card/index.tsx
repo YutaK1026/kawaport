@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "@/components/atom/card";
-import data from "./skill-card.json";
-import styles from "./skill-card.module.scss";
+import data from "./project-card.json";
+import styles from "./project-card.module.scss";
 import Button from "@/components/atom/button";
 import Image from "next/image";
-import projects from "@/public/skill/skills.png";
+import projects from "@/public/project/project-list.png";
 
-const SkillCard = () => {
+const ProjectCard = () => {
   return (
     <Card>
       <Card.Title>{data.title}</Card.Title>
@@ -20,8 +20,8 @@ const SkillCard = () => {
               style={{
                 width: "auto",
                 height: "auto",
-                maxHeight: "200px",
-                maxWidth: "200px",
+                maxHeight: "300px",
+                maxWidth: "300px",
                 borderRadius: "10px",
               }}
             />
@@ -40,4 +40,4 @@ const SkillCard = () => {
   );
 };
 
-export default SkillCard;
+export default ProjectCard;
