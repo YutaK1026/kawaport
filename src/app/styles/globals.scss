@@ -8,5 +8,26 @@
 body {
   margin: 0px !important;
   font-family: "JetBrains Mono", monospace;
-  // background-color: #abbee0;
+  background: radial-gradient(
+      105.68% 45.69% at 92.95% 50%,
+      rgba(182, 221, 224) 0%,
+      rgba(160, 255, 244, 0.095) 53.91%,
+      rgb(255, 255, 255) 100%
+    ),
+    radial-gradient(
+      103.18% 103.18% at 90.11% 102.39%,
+      #c9fff2 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      90.45% 90.45% at 87.84% 9.55%,
+      #ffd2f5 0%,
+      rgb(255, 255, 255) 100%
+    ),
+    linear-gradient(
+      135.66deg,
+      rgba(203, 185, 255) 14.89%,
+      rgb(255, 255, 255) 74.33%
+    );
+  background-blend-mode: normal, normal, normal, normal, normal, normal;
 }
