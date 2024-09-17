@@ -1,0 +1,54 @@
+@import "../../../app/styles/color-theme.scss";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $jetbrains-mono;
+
+  &__title {
+    font-size: 4rem; /* フォントサイズを大きく設定 */
+    border-radius: 8px; /* ボックスの角を丸める（任意） */
+  }
+
+  &__titleNav {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 1rem;
+    margin-right: 7%;
+  }
+
+  &__content {
+    margin: 5%;
+    padding: 5%;
+    margin-top: -8px;
+  }
+
+  &__subTitle {
+    font-size: xx-large;
+    margin-bottom: 5%;
+  }
+
+  &__subContent {
+    margin-bottom: 1rem;
+  }
+}
+
+.title {
+  text-align: right; /* 右寄せ */
+  & &__content {
+    margin-right: 5%;
+    position: relative; /* 相対位置を設定 */
+    background-color: $background-color; /* ボックスの背景色を白に設定 */
+    width: 90%;
+    display: inline-block;
+  }
+  & &__content::after {
+    content: ""; /* 擬似要素のための空コンテンツ */
+    display: block; /* 下線をボックス全体に表示 */
+    width: 100%; /* ボックスの幅に一致するように設定 */
+    height: 1.5px; /* 下線の太さ */
+    background-color: $background-color-reverse; /* 下線の色 */
+    margin-top: 8px; /* コンテンツと下線の間に余白を追加 */
+  }
+}
