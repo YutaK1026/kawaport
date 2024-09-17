@@ -7,8 +7,14 @@ export const NavLink = () => {
       <Link href="/">
         <div className={styles.navLink}>Home</div>
       </Link>
-      <Link href="/">
+      <Link href="/about">
         <div className={styles.navLink}>About</div>
+      </Link>
+      <Link href="/product">
+        <div className={styles.navLink}>Product</div>
+      </Link>
+      <Link href="/skill">
+        <div className={styles.navLink}>Skill</div>
       </Link>
     </nav>
   );

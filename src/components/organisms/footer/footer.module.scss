@@ -1,0 +1,31 @@
+// styles/Footer.module.scss
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative; // 相対位置でページのコンテンツに応じて位置を決定
+  margin-top: 1rem; // 上部の余白を調整
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.iconLink {
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  width: 30px;
+}
+
+.iconLink:hover {
+  color: #aaa;
+}
+
+.icon {
+  transition: color 0.3s;
+}

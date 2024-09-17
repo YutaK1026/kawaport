@@ -5,15 +5,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/fonts/JetBrainsMono-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
-  margin: 0;
+  margin: 0px !important;
   font-family: "JetBrains Mono", monospace;
-  background-color: #fff;
+  // background-color: #abbee0;
 }

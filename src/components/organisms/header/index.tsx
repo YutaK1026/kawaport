@@ -6,6 +6,7 @@ import styles from "./header.module.scss";
 import { NavLink } from "./atom/nav";
 import { Title } from "./atom/title";
 import Image from "next/image";
+import { symlink } from "fs";
 
 const Header = () => {
   const animationRef = useRef<HTMLDivElement>(null);
@@ -31,6 +32,7 @@ const Header = () => {
         <div className={styles.header__gradient}></div>
         <div className={styles.header__gradient_cover}></div>
       </div>
+      <div className={styles.header__arrow__bottom}></div>
     </header>
   );
 };

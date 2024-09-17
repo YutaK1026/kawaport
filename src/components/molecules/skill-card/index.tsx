@@ -4,7 +4,7 @@ import data from "./skill-card.json";
 import styles from "./skill-card.module.scss";
 import Button from "@/components/atom/button";
 import Image from "next/image";
-import projects from "@/public/skill/skills.png";
+import skills from "@/public/skill/skills.png";
 
 const SkillCard = () => {
   return (
@@ -14,7 +14,7 @@ const SkillCard = () => {
         <div className={styles.container}>
           <div className={styles.container__left}>
             <Image
-              src={projects}
+              src={skills}
               alt="Picture of the author"
               layout="responsive"
               style={{
