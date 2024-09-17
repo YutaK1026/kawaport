@@ -1,6 +1,5 @@
 import Experiences from ".";
 import { Experience } from ".";
-import testdata from "./experiences.json";
 const meta = {
   title: "Experiences",
   component: Experiences,
@@ -27,6 +26,6 @@ const data: Experience[] = [
 ];
 
 export const Default = () => {
-  return <Experiences experiences={testdata} />;
+  return <Experiences experiences={data} />;
 };
 Default.storyName = "Experiences";

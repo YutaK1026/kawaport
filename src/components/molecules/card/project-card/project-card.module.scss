@@ -1,4 +1,4 @@
-@import "../../../app/styles/color-theme.scss";
+@import "../../../../app/styles/color-theme.scss";
 .container {
   display: flex;
   height: 200px; /* 親に依存した高さ */
@@ -6,6 +6,7 @@
   & &__left {
     flex: 2; /* 左側を2に設定（2/5） */
     margin: 8px;
+    width: 100%;
   }
 
   & &__right {
@@ -19,7 +20,8 @@
   }
 
   & &__content {
-    height: 100%; /* 親要素に依存 */
+    position: relative;
+    // height: 100%; /* 親要素に依存 */
     margin: 8px;
   }
 }

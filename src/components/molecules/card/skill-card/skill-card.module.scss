@@ -1,0 +1,33 @@
+@import "../../../../app/styles/color-theme.scss";
+.container {
+  display: flex;
+  height: 200px; /* 親に依存した高さ */
+
+  & &__left {
+    flex: 2; /* 左側を2に設定（2/5） */
+    margin: 8px;
+  }
+
+  & &__right {
+    position: relative;
+    flex: 3; /* 右側を3に設定（3/5） */
+    height: 100%; /* 親要素に依存 */
+    white-space: pre-line;
+    font-size: large;
+    line-break: loose;
+    overflow: auto;
+  }
+
+  & &__content {
+    height: 100%; /* 親要素に依存 */
+    margin: 8px;
+  }
+}
+
+.footer {
+  float: right; /* 右側にボタンを配置 */
+  padding: 10px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,4 +1,3 @@
-@import "../../../app/styles/color-theme.scss";
 .container {
   display: flex;
   height: 200px; /* 親に依存した高さ */
@@ -22,12 +21,4 @@
     height: 100%; /* 親要素に依存 */
     margin: 8px;
   }
-}
-
-.footer {
-  float: right; /* 右側にボタンを配置 */
-  padding: 10px;
-  margin-right: 20px;
-  border: none;
-  cursor: pointer;
 }

@@ -1,6 +1,6 @@
-import AboutCard from "@/components/molecules/about-card";
-import SkillCard from "@/components/molecules/skill-card";
-import ProjectCard from "@/components/molecules/project-card";
+import AboutCard from "@/components/molecules/card/about-card";
+import SkillCard from "@/components/molecules/card/skill-card";
+import ProjectCard from "@/components/molecules/card/project-card";
 
 const Cards = () => {
   return (
