@@ -45,7 +45,7 @@ const About = () => {
                   <br />
                   <br />
                   <br />
-                  Web技術に興味があり、フロント・BFF・バックエンド全て経験があります。特にフロントエンドが得意で、Next.js,
+                  Web技術に興味があり、フロント・バックエンド全て経験があります。特にフロントエンドが得意で、Next.js,
                   TypeScript, Sass, storybookなどを使用し開発しています。
                   バックエンドでは、Nest.js, FastAPIを使用することが多いです。
                   <br />

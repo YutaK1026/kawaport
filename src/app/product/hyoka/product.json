@@ -1,0 +1,9 @@
+{
+  "title": "HYOKA",
+  "skill_stack": "React, FastAPI, selenium & beautifulsoup4",
+  "member": "サークルの同期含め4人",
+  "period": "2022/10 ~ 2022/10",
+  "content": "JPHacks2022に出場したときの作品です. \nAmazonの商品を比較できるサイトを作りました. \n比較画面にChart.jsを使いレーダーチャートを表示しようとしたのに苦戦した記憶があります. \n残念ながら受賞はできませんでしたが、初めてアニメーション付きのフロントを実装する経験が出来ました.",
+  "content__point": "- 商品情報をレーダーチャートで可視化し、わかりやすく表示出来る. \n- 商品URLを入力するだけで商品情報を抽出できる機能. \n- 自動抽出が間違っていた場合の修正機能.",
+  "github_url": "https://github.com/jphacks/C_2202"
+}

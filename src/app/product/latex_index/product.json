@@ -1,0 +1,10 @@
+{
+  "title": "LaTeX Index",
+  "skill_stack": "Next.js, TailwindCSS, Shadcn/ui, Firebase, Notion",
+  "member": "個人",
+  "period": "2024/1 ~ 2024/3",
+  "content": "LaTeXのコマンドのまとめサイトがあると良いな、と思い、自分で作成しました. \nコマンドの詳細をクリックすると、実際のコマンドとそのプレビュー画像が表示されるなど、初心者が使いやすいサイトになっています. \n検索システムでは、N-Gramを使い、曖昧な検索に対応するようにしています.",
+  "content__point": "- LaTeXのコマンドとそのプレビューを表示 \n- 曖昧検索に対応しており、コマンド名から、その周辺単語を入力しても検索結果として表示可能\n- ダークモードにも対応しており、エンジニアが好きなオシャレなデザインを意識\n- SSGを用いた爆速ローディング",
+  "github_url": "https://github.com/YutaK1026/LaTeXIndex",
+  "url": "https://latexindex.vercel.app/"
+}

@@ -1,5 +1,5 @@
 {
   "title": "Skill",
   "tag": "skill",
-  "content": "主にweb系, ML系の技術を持っています. \n基本的に静的型付け言語が好きです. \nweb系では、Next.js, TypeScript, Sass, storybookを主に使用しています. \n本サイトも、上記3つの技術を使用して作成しました. \nまた、バックエンドはNest.js, FastAPIなどを使うことが多いです. \nML系では、研究室でpytorchを使用している関係で、python, pytorchを使うことが多いです. セグメンテーション、画像処理などを行うことができます."
+  "content": "主にweb系, ML系の技術を持っています. \n基本的に静的型付け言語が好きです. \nweb系では、Next.js, TypeScript, Sass, storybookを主に使用しています. \n本サイトも、上記3つの技術を使用して作成しました. \nまた、バックエンドはNest.js, FastAPIなどを使うことが多いです. \nML系では、研究室でPyTorchを使用している関係で、Python, PyTorchを使うことが多いです. セグメンテーション、画像処理などを行うことができます."
 }

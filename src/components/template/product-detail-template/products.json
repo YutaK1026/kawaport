@@ -1,0 +1,10 @@
+{
+  "title": "CODE_DUEL",
+  "skill_stack": "Next.js, Sass, Storybook, Nest.js, Prisma",
+  "member": "サークルの同期含め4人",
+  "period": "2022/7 ~ Now",
+  "content": "サークルの同期と作成した、初の大規模プロジェクトです。\n当初はサポーターズ主催のハッカソン(技育CAMP, 技育展)に出展するようのものだったのですが、愛着が湧き、リファクタ・機能拡張を繰り返しています。\n過去に必要なブランチを消してしまったり、大規模なコンフリクトをしたりし、このプロジェクトを経てチーム開発を学んでいきました。\n",
+  "content__point": "- プログラマー向けのプログラミング言語カードゲーム\n- Express + WebSocketを用いたリアルタイム対戦の実装\n- 対CPU戦の実装による、一人でも楽しめるゲーム体験の提供",
+  "github_url": "https://example.com",
+  "url": "https://example.com"
+}

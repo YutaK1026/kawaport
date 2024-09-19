@@ -1,5 +1,3 @@
-// components/Page.js
-
 import React from "react";
 import styles from "./page-template.module.scss";
 

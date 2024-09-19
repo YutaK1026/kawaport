@@ -9,8 +9,10 @@ import Image, { StaticImageData } from "next/image";
 import initImage from "@/public/project/code_duel.png";
 import data from "./products.json";
 import product_dict, { ProductDict } from "./hook";
+import { useRouter } from "next/navigation";
 
 const Product = () => {
+  const { push } = useRouter();
   const [imageSrc, setImageSrc] = useState<StaticImageData>(initImage);
   const [currentImageSrc, setCurrentImageSrc] =
     useState<StaticImageData>(initImage);
@@ -20,10 +22,8 @@ const Product = () => {
     setImageSrc(product_dict[key as keyof ProductDict]);
   };
 
-  const handleMouseLeave = () => {};
-
   const handleClick = (key: string) => {
-    alert("Box clicked!");
+    push(`/product/${key}`);
   };
 
   useEffect(() => {

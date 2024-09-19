@@ -1,0 +1,24 @@
+.container {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.title {
+  margin: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5rem;
+  padding: 2rem;
+  justify-items: center;
+  justify-content: center;
+  max-width: 1200px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "旧ポートフォリオ",
+  "skill_stack": "Next.js, TailwindCSS",
+  "member": "個人",
+  "period": "2024/2 ~ 2024/5",
+  "content": "以前作成したポートフォリオです. \nSSR, CSRなどを意識しだしたり、デザインパターンを意識しだしたり、レスポンシブ化に挑戦したりと、様々なことに挑戦し出したプロダクトです. \nデザインなどが微妙で作り直したのですが、ここにしかない「KawaSQL」というSQLのパロディー作品があるため、ぜひ見ていただきたいです!",
+  "content__point": "- Next.jsのレンダリングへの意識\n- 保守性の高いコードへの意識\n- 初の完全自作ポートフォリオ\n- KawaSQLというSQLのパロディー言語・ターミナルの実装",
+  "github_url": "https://github.com/YutaK1026/portfolio",
+  "url": "https://kawachann.com/about"
+}
