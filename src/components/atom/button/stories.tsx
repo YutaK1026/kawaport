@@ -8,6 +8,6 @@ const meta = {
 export default meta;
 
 export const Default = () => {
-  return <Button content="本文を記述" />;
+  return <Button content="本文を記述" path="" />;
 };
 Default.storyName = "Button";
