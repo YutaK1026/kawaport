@@ -33,7 +33,7 @@ const ProjectCard = () => {
       </Card.Content>
       <Card.Footer>
         <div className={styles.footer}>
-          <Button content="詳細はこちら" />
+          <Button content="詳細はこちら" path="/product" />
         </div>
       </Card.Footer>
     </Card>

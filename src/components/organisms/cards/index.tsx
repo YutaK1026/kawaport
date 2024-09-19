@@ -6,8 +6,8 @@ const Cards = () => {
   return (
     <div>
       <AboutCard />
-      <SkillCard />
       <ProjectCard />
+      <SkillCard />
     </div>
   );
 };

@@ -15,5 +15,12 @@
 ## プロダクトを追加する方法
 
 1. `/component/pages/product/products.json`に、プロダクトのタイトル、key、alt などを記述する
-2. `/component/pages/product/hook.ts`に、プロダクトの表示画像の path を記述し、import するようにコードを修正する
-3. 適切な場所にプロダクト詳細を記述できるようにする。
+2. `public/project/[product name]`に、表示したい画像を配置する。
+3. `/component/pages/product/hook.ts`に、プロダクトの表示画像の path を記述し、import するようにコードを修正する
+4. `src/app/product/[page name]`に、表示したいプロダクトのページを作成し、中の data.json にプロダクト詳細に記入したい内容を書く。
+
+## スキルを追加する方法
+
+1. `component/pages/skill/data.json`に、スキルの imgSrc(key), name, description, period を記述する
+2. `public/skill/[skill name]`に、表示したい画像を配置する。
+3. `component/atom/skill-card/hook.ts`に、表示したい画像の path を記述する。path key は先ほど記入した imgSrc に合わせる。
