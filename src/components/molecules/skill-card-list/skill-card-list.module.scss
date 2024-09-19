@@ -13,7 +13,6 @@
   padding: 2rem;
   justify-items: center;
   justify-content: center;
-  max-width: 1200px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
