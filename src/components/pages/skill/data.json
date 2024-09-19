@@ -81,6 +81,12 @@
       "name": "Azure",
       "description": "クラウドサービスは主にAzureを使っています。インターンで、仮想コンテナサービスの提供をする際にAzureを使用しています。",
       "period": "1 years"
+    },
+    {
+      "imgSrc": "mysql",
+      "name": "MySQL",
+      "description": "データベースを使いたい時はMySQLを使用しています。基本的なSQLコマンドを記述することはできます。",
+      "period": "2 years"
     }
   ]
 }
