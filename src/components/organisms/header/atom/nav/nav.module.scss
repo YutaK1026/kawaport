@@ -3,6 +3,10 @@
   gap: 20px; // リンク間のスペース
 }
 
+.underline {
+  text-decoration-color: var(--text-underline-color);
+}
+
 .navLink {
   font-size: 1.3rem;
   color: var(--font-primary-color);

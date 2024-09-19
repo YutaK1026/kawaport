@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
+import styles from "./styles/layout.module.scss";
 
 const variants = {
   hidden: { opacity: 0 },

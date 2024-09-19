@@ -1,7 +1,13 @@
 import Product from "@/components/pages/product";
+import TopHeader from "@/components/organisms/top-header";
 
 const ProductPage = () => {
-  return <Product />;
+  return (
+    <div>
+      <TopHeader />
+      <Product />
+    </div>
+  );
 };
 
 export default ProductPage;

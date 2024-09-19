@@ -1,12 +1,15 @@
 .container {
   display: flex;
+  flex-direction: row; /* デフォルトで左右に並ぶ */
   height: 100%; /* 親に依存した高さ */
   margin-bottom: 5%;
 
   & &__left {
     flex: 2; /* 左側を2に設定（2/5） */
-    margin: 8px;
     margin-top: 3%;
+    display: flex;
+    justify-content: center; /* 左右中央揃え */
+    align-items: center; /* 上下中央揃え */
   }
 
   & &__right {
@@ -21,7 +24,21 @@
   }
 
   & &__content {
+    height: 100%; /* 親要素に依存 */
     margin: 8px;
+  }
+
+  /* スマホ版では上下にレイアウト */
+  @media (max-width: 768px) {
+    flex-direction: column; /* 上下に並ぶ */
+    height: auto; /* 高さは自動調整 */
+
+    & &__left,
+    & &__right {
+      flex: none; /* 上下レイアウトの際はフレックスを解除 */
+      width: 100%; /* 両方を全幅にする */
+      height: auto; /* 高さも自動にする */
+    }
   }
 }
 

@@ -12,6 +12,10 @@
   color: var(--font-primary-color);
   border: 1px solid var(--card-border-color);
 
+  @media (max-width: 768px) {
+    width: 80vw; /* スマホでは幅を80vwに変更 */
+  }
+
   & &__title {
     font-size: xx-large;
     margin-left: 24px;

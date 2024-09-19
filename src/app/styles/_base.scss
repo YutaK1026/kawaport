@@ -7,28 +7,30 @@ body {
 // Light mode
 :root {
   background-color: #ffffff;
-  color: #222222;
-  --font-primary-color: #222222;
+  color: #23282f;
+  --font-primary-color: #23282f;
   --background-color: #ffffff;
   --card-background-color: #ffffff;
   --card-border-color: #f7f7f7;
-  --footer-color: #222222;
+  --footer-color: #23282f;
   --iconLink-color: #ffffff;
   --iconLink-color-hover: #444444;
-  --arrow-bottom: #222222;
-  --title-border-color: #222222;
+  --arrow-bottom: #000000;
+  --title-border-color: #23282f;
+  --text-underline-color: #23282f;
 }
 
 [data-theme="dark"] {
-  background-color: #222222;
+  background-color: #23282f;
   color: #f7f7f7;
   --font-primary-color: #f7f7f7;
-  --background-color: #222222;
-  --card-background-color: #d33c3c;
+  --background-color: #23282f;
+  --card-background-color: #1b2028;
   --card-border-color: #333333;
-  --footer-color: #f7f7f7;
-  --iconLink-color: #222222;
-  --iconLink-color-hover: #444444;
+  --footer-color: #1b2028;
+  --iconLink-color: #f7f7f7;
+  --iconLink-color-hover: #939393;
   --arrow-bottom: #ffffff;
-  --title-border-color: #f7f7f7;
+  --title-border-color: #719ddc;
+  --text-underline-color: #719ddc;
 }

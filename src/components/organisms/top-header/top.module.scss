@@ -1,0 +1,43 @@
+.top__header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; // Space between logo and button
+  align-items: center;
+}
+
+.logo {
+  color: var(--font-primary-color);
+  top: 0;
+  left: 0;
+  margin: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.toggleButton {
+  margin-right: 3%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+  }
+}

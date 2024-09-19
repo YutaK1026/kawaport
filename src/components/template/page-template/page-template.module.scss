@@ -1,8 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  // font-family: $jetbrains-mono;
+  margin-top: 30px;
 
   &__title {
     font-size: 3.6rem; /* フォントサイズを大きく設定 */
@@ -17,7 +16,7 @@
   }
 
   &__content {
-    margin: 5%;
+    margin: 2%;
     padding: 5%;
     margin-top: -8px;
   }

@@ -5,10 +5,8 @@ import { gsap } from "gsap";
 import styles from "./header.module.scss";
 import { NavLink } from "./atom/nav";
 import { Title } from "./atom/title";
-import { useTheme } from "next-themes";
 
 const Header = () => {
-  const { theme, setTheme } = useTheme();
   const animationRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,9 +21,6 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <button onClick={() => setTheme("light")}>Light Mode</button>
-      <button onClick={() => setTheme("dark")}>Dark Mode</button>
-      <div className={styles.logo}>KawaPort</div>
       <div className={styles.header__content} ref={animationRef}>
         <Title />
         <NavLink />

@@ -62,17 +62,22 @@
     display: inline-block;
   }
 }
-
 .page__content {
   display: grid;
-  position: relative; /* relativeでz-indexの設定を有効に */
+  position: relative;
   z-index: 1; /* page::beforeよりも前面に表示されるようにする */
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr; /* デフォルトは2カラム（左: 1fr, 右: 2fr） */
   grid-gap: 2rem;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   padding-left: 10%;
   padding-right: 10%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* スマホでは1カラムに */
+    padding-left: 0; /* スマホ用にパディングを調整 */
+    padding-right: 0;
+  }
 }
 
 .page__contentLeft,
@@ -81,6 +86,10 @@
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: var(--background-color);
+
+  @media (max-width: 768px) {
+    padding: 5%; /* スマホ用にパディングを調整 */
+  }
 }
 
 .content {
