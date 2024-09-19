@@ -82,6 +82,12 @@
     background-blend-mode: normal, normal, normal, normal, normal, normal;
     filter: blur(35px);
   }
+  @media (max-width: 768px) {
+    & &__gradient,
+    & &__gradient_cover {
+      display: none; /* スマホサイズでは非表示にする */
+    }
+  }
 
   .logo {
     color: var(--font-primary-color);
@@ -109,5 +115,12 @@
     box-sizing: border-box;
     transform: translateY(-25%) rotate(135deg);
     color: var(--arrow-bottom);
+  }
+
+  @media (max-width: 768px) {
+    & &__arrow__bottom {
+      margin-bottom: 20px; /* スマホサイズでは矢印をもっと下に移動 */
+      transform: translateY(-15%) rotate(135deg); /* スマホサイズでの微調整 */
+    }
   }
 }
