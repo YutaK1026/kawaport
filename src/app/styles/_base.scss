@@ -1,16 +1,16 @@
-@import "./variables";
-
 body {
-  font-family: $jetbrains-mono;
+  font-family: "JetBrains Mono", monospace;
   transition: background-color 0.3s, color 0.3s;
+  margin: 0;
 }
 
 // Light mode
 :root {
-  background-color: $background-color-light;
-  color: $font-primary-color-light;
+  background-color: #ffffff;
+  color: #222222;
   --font-primary-color: #222222;
   --background-color: #ffffff;
+  --card-background-color: #ffffff;
   --card-border-color: #f7f7f7;
   --footer-color: #222222;
   --iconLink-color: #ffffff;
@@ -20,11 +20,12 @@ body {
 }
 
 [data-theme="dark"] {
-  background-color: $background-color-dark;
-  color: $font-primary-color-dark;
+  background-color: #222222;
+  color: #f7f7f7;
   --font-primary-color: #f7f7f7;
   --background-color: #222222;
-  --card-border-color: #555555;
+  --card-background-color: #d33c3c;
+  --card-border-color: #333333;
   --footer-color: #f7f7f7;
   --iconLink-color: #222222;
   --iconLink-color-hover: #444444;

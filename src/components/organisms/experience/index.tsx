@@ -22,6 +22,10 @@ const Experiences = ({ experiences }: ExperienceProps) => {
           <VerticalTimelineElement
             visible={true}
             className="vertical-timeline-element--work"
+            contentStyle={{
+              color: "var(--font-primary-color)",
+              background: "var(--background-color)",
+            }}
             date={prop.date}
             iconStyle={{
               background: "#222222",

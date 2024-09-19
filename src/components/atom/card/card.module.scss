@@ -8,7 +8,7 @@
   display: grid;
   grid-template-rows: 100px auto 60px; /* 各行の高さを指定 */
   gap: 10px; /* 行の間隔 */
-  background-color: var(--background-color);
+  background-color: var(--card-background-color);
   color: var(--font-primary-color);
   border: 1px solid var(--card-border-color);
 
