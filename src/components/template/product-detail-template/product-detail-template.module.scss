@@ -56,6 +56,7 @@
 }
 
 .title {
+  color: var(--font-primary-color);
   &__content {
     padding: 0.5rem;
     display: inline-block;
@@ -79,7 +80,7 @@
   padding: 10%;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .content {
@@ -96,14 +97,14 @@
 }
 
 .iconLink {
-  color: #000;
+  color: var(--iconLink-color);
   font-size: 2.5rem;
   text-decoration: none;
   width: 30px;
 }
 
 .iconLink:hover {
-  color: #aaa;
+  color: var(--iconLink-color-hover);
 }
 
 .icon {

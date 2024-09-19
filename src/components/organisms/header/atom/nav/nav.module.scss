@@ -1,13 +1,9 @@
-@import "../../../../../app/styles/color-theme.scss";
-
 .nav {
   display: flex;
   gap: 20px; // リンク間のスペース
 }
 
 .navLink {
-  color: $font-primary-color;
-  // text-decoration: none;
-  font-family: $jetbrains-mono;
   font-size: 1.3rem;
+  color: var(--font-primary-color);
 }

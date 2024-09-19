@@ -1,0 +1,33 @@
+@import "./variables";
+
+body {
+  font-family: $jetbrains-mono;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+// Light mode
+:root {
+  background-color: $background-color-light;
+  color: $font-primary-color-light;
+  --font-primary-color: #222222;
+  --background-color: #ffffff;
+  --card-border-color: #f7f7f7;
+  --footer-color: #222222;
+  --iconLink-color: #ffffff;
+  --iconLink-color-hover: #444444;
+  --arrow-bottom: #222222;
+  --title-border-color: #222222;
+}
+
+[data-theme="dark"] {
+  background-color: $background-color-dark;
+  color: $font-primary-color-dark;
+  --font-primary-color: #f7f7f7;
+  --background-color: #222222;
+  --card-border-color: #555555;
+  --footer-color: #f7f7f7;
+  --iconLink-color: #222222;
+  --iconLink-color-hover: #444444;
+  --arrow-bottom: #ffffff;
+  --title-border-color: #f7f7f7;
+}

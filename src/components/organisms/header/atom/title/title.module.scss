@@ -1,16 +1,11 @@
-@import "../../../../../app/styles/color-theme.scss";
-
 .header__title {
   position: relative;
   font-size: 2.5rem;
-  color: $font-primary-color;
-  font-family: "JetBrains Mono", monospace;
 
   & &__contentAnimation {
     position: relative;
     display: inline-block;
     width: auto;
-    background-color: $background-color;
     overflow: hidden;
   }
 }

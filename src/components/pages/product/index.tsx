@@ -36,51 +36,51 @@ const Product = () => {
   }, [imageSrc]);
 
   return (
-    <div className={styles.background}>
-      <Page>
-        <Page.Title>Product</Page.Title>
-        <Page.TitleNav>
-          <NavLink />
-        </Page.TitleNav>
-        <Page.Content>
-          <div className={styles.container}>
-            <div className={styles.container__left}>
-              <Image
-                src={currentImageSrc}
-                alt="product"
-                layout="responsive"
-                placeholder="blur"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  borderRadius: "10px",
-                  boxShadow: "3px",
-                }}
-                className={`${styles.imageWrapper} ${
-                  fade ? styles.fadeOut : styles.fadeIn
-                }`}
-              />
-            </div>
-            <div className={styles.container__right}>
-              <div className={styles.container__content}>
-                {data.map((prop) => {
-                  return (
-                    <div
-                      className={styles.product__item}
-                      onMouseEnter={() => handleMouseEnter(prop.key)}
-                      onClick={() => handleClick(prop.key)}
-                    >
-                      {prop.title}
-                    </div>
-                  );
-                })}
-              </div>
+    // <div className={styles.background}>
+    <Page>
+      <Page.Title>Product</Page.Title>
+      <Page.TitleNav>
+        <NavLink />
+      </Page.TitleNav>
+      <Page.Content>
+        <div className={styles.container}>
+          <div className={styles.container__left}>
+            <Image
+              src={currentImageSrc}
+              alt="product"
+              layout="responsive"
+              placeholder="blur"
+              style={{
+                width: "100%",
+                height: "auto",
+                borderRadius: "10px",
+                boxShadow: "3px",
+              }}
+              className={`${styles.imageWrapper} ${
+                fade ? styles.fadeOut : styles.fadeIn
+              }`}
+            />
+          </div>
+          <div className={styles.container__right}>
+            <div className={styles.container__content}>
+              {data.map((prop) => {
+                return (
+                  <div
+                    className={styles.product__item}
+                    onMouseEnter={() => handleMouseEnter(prop.key)}
+                    onClick={() => handleClick(prop.key)}
+                  >
+                    {prop.title}
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </Page.Content>
-        <Footer />
-      </Page>
-    </div>
+        </div>
+      </Page.Content>
+      <Footer />
+    </Page>
+    // </div>
   );
 };
 

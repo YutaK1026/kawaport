@@ -7,18 +7,18 @@ import data from "./data.json";
 
 const Skill = () => {
   return (
-    <div className={styles.background}>
-      <Page>
-        <Page.Title>About</Page.Title>
-        <Page.TitleNav>
-          <NavLink />
-        </Page.TitleNav>
-        <Page.Content>
-          <SkillCardList skills={data} />
-        </Page.Content>
-        <Footer />
-      </Page>
-    </div>
+    // <div className={styles.background}>
+    <Page>
+      <Page.Title>About</Page.Title>
+      <Page.TitleNav>
+        <NavLink />
+      </Page.TitleNav>
+      <Page.Content>
+        <SkillCardList skills={data} />
+      </Page.Content>
+      <Footer />
+    </Page>
+    // </div>
   );
 };
 

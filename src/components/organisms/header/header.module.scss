@@ -1,8 +1,5 @@
-// styles/Header.module.scss
-@import "../../../app/styles/color-theme.scss";
-
 .header {
-  background-color: $background-color;
+  background-color: var(--background-color);
   padding: 0;
   height: 100vh; // 画面全体の高さ
   display: flex;
@@ -87,35 +84,22 @@
   }
 
   .logo {
+    color: var(--font-primary-color);
     position: fixed;
     top: 0;
     left: 0;
     margin: 24px;
     font-size: 24px;
     font-weight: bold;
-    color: $font-primary-color;
   }
 
   & &__arrow__bottom {
-    //   position: relative;
-    //   display: inline-flex;
-    //   transform: rotate(90deg);
-    // }
-    // & &__arrow__bottom::after {
-    //   content: "";
-    //   width: 80px;
-    //   height: 15px;
-    //   border-bottom: solid 1px;
-    //   border-right: solid 1px;
-    //   transform: skew(45deg);
-    // }
     position: absolute;
     left: 50%;
     margin: auto;
     margin-bottom: 40px; /* 矢印を上に移動させるためにマージンを追加 */
     display: inline-block;
     vertical-align: middle;
-    color: #333;
     line-height: 1;
     width: 1em;
     height: 1em;
@@ -124,5 +108,6 @@
     border-bottom: 0;
     box-sizing: border-box;
     transform: translateY(-25%) rotate(135deg);
+    color: var(--arrow-bottom);
   }
 }

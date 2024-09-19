@@ -16,7 +16,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       animate="enter"
       transition={{
         type: "linear",
-        duration: 1,
+        duration: 0.5,
       }}
     >
       {children}

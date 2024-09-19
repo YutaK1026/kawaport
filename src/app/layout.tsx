@@ -1,3 +1,5 @@
+// import { useTheme } from "next-themes";
+import { ThemeProvider } from "next-themes";
 import "./styles/globals.scss";
 
 export const metadata = {
@@ -12,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="jp">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider attribute="data-theme">{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

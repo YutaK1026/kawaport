@@ -1,4 +1,4 @@
-.skillCard {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,9 +8,11 @@
   padding: 1rem;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
-  background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  background-color: var(--background-color);
+  color: var(--font-primary-color);
+  border: 1px solid var(--card-border-color);
 
   &:hover {
     transform: translateY(-5px);

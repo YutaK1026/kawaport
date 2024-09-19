@@ -22,7 +22,7 @@ const LanguageSkillCard: React.FC<SkillCardProps> = ({
   const imgSrc = skill_dict[props.imgSrc as keyof SkillDict];
 
   return (
-    <div className={styles.skillCard}>
+    <div className={styles.card}>
       <div className={styles.imageContainer}>
         <Image
           src={imgSrc}
