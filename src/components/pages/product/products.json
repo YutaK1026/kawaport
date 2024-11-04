@@ -28,5 +28,10 @@
     "title": "旧ポートフォリオ",
     "key": "portfolio_old",
     "alt": "portfolio_old"
+  },
+  {
+    "title": "OriCube",
+    "key": "oricube",
+    "alt": "oricube"
   }
 ]

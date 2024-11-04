@@ -7,6 +7,7 @@ import latex_index from "@/public/project/latex_index.png";
 import hyoka from "@/public/project/hyoka.png";
 import jackFesOP from "@/public/project/jackFesOP.png";
 import portfolio_old from "@/public/project/portfolio_old.png";
+import oricube from "@/public/project/oricube.png";
 import { StaticImageData } from "next/image";
 
 export interface ProductDict {
@@ -16,6 +17,7 @@ export interface ProductDict {
   hyoka: StaticImageData;
   jackFesOP: StaticImageData;
   portfolio_old: StaticImageData;
+  oricube: StaticImageData;
 }
 
 const product_dict: ProductDict = {
@@ -25,6 +27,7 @@ const product_dict: ProductDict = {
   hyoka: hyoka,
   jackFesOP: jackFesOP,
   portfolio_old: portfolio_old,
+  oricube: oricube,
 };
 
 export default product_dict;
