@@ -1,10 +1,10 @@
 import React from "react";
 import LanguageSkillCard from "@/components/atom/skill-card";
-import { SkillCard } from "@/components/atom/skill-card";
+import { SkillCardProps } from "@/components/atom/skill-card";
 import styles from "./skill-card-list.module.scss";
 
 interface SkillCardListProps<T extends string> {
-  skills: Record<T, SkillCard[]>;
+  skills: Record<T, SkillCardProps["props"][]>;
 }
 
 const SkillCardList = <T extends string>({ skills }: SkillCardListProps<T>) => {
