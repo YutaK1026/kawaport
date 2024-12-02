@@ -1,7 +1,6 @@
 import Card from "@/components/atom/card";
 import data from "./about-card.json";
 import styles from "./about-card.module.scss";
-import profilePic from "@/public/kawachan.png";
 import Image from "next/image";
 import Button from "@/components/atom/button";
 
@@ -13,9 +12,11 @@ const AboutCard = () => {
         <div className={styles.container}>
           <div className={styles.container__left}>
             <Image
-              src={profilePic}
+              src="/kawachan.png"
               alt="Picture of the author"
               layout="responsive"
+              width={100}
+              height={100}
               style={{
                 width: "auto",
                 height: "auto",

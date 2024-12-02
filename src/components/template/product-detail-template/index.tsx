@@ -3,18 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FaLink } from "react-icons/fa6";
 import styles from "./product-detail-template.module.scss";
-import { NavLink } from "@/components/organisms/header/atom/nav";
-import Image, { StaticImageData } from "next/image";
-
+import Image from "next/image";
 interface ProductDetailPageProps {
   children: React.ReactNode;
 }
 
 interface ProductDetailContentProps {
-  skill_stack: string;
+  skillStack: string;
   member: string;
   period: string;
-  github_url: string;
+  githubUrl: string;
   url?: string;
 }
 
@@ -22,14 +20,15 @@ const ProductDetailPage = ({ children }: ProductDetailPageProps) => {
   return <div className={styles.page}>{children}</div>;
 };
 
-const ProductImage = ({ img }: { img: StaticImageData }) => {
+const ProductImage = ({ imgUrl }: { imgUrl: string }) => {
   return (
     <div className={styles.productImage}>
       <Image
-        src={img}
+        src={imgUrl}
         alt="Product Image"
-        objectFit="cover" // 画像が親要素を覆うように調整
-        objectPosition="top" // 画像の上部を表示する位置に設定
+        layout="responsive"
+        width={100}
+        height={60}
         style={{
           width: "60vw",
           height: "auto",
@@ -66,16 +65,16 @@ const Content = ({
 };
 
 const LeftContent = ({
-  skill_stack,
+  skillStack,
   member,
   period,
-  github_url,
+  githubUrl,
   url,
 }: ProductDetailContentProps) => {
   return (
     <div>
       <h2>使用技術</h2>
-      <p>{skill_stack}</p>
+      <p>{skillStack}</p>
 
       <h2>開発メンバー</h2>
       <p>{member}</p>
@@ -85,7 +84,7 @@ const LeftContent = ({
 
       <div className={styles.iconContainer}>
         <a
-          href={github_url}
+          href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.iconLink}
@@ -111,10 +110,10 @@ const LeftContent = ({
 
 const RightContent = ({
   content,
-  content__point,
+  contentPoint,
 }: {
   content: string;
-  content__point: string;
+  contentPoint: string;
 }) => {
   return (
     <div>
@@ -122,7 +121,7 @@ const RightContent = ({
       <div className={styles.content}>{content}</div>
       <br />
       <h2>実装時のポイント</h2>
-      <div className={styles.content}>{content__point}</div>
+      <div className={styles.content}>{contentPoint}</div>
     </div>
   );
 };
