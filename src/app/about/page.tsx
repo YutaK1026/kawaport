@@ -1,5 +1,5 @@
-import About from "@/components/pages/about/page";
-import TopHeader from "@/components/organisms/top-header";
+import About from "@/components/About/page";
+import TopHeader from "@/components/Home/TopHeader";
 
 const AboutPage = () => {
   return (

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import React from "react";
-import ProductDetailPage from "@/components/template/product-detail-template";
+import ProductDetailPage from "@/components/Product/Detail";
 import { ProductData } from "@/types/product";
 
 async function getProductData(id: string): Promise<ProductData | null> {

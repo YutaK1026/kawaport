@@ -3,8 +3,8 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import styles from "./header.module.scss";
-import { NavLink } from "./atom/nav";
-import { Title } from "./atom/title";
+import { NavLink } from "@/components/atom/nav";
+import { Title } from "./Title";
 
 const Header = () => {
   const animationRef = useRef<HTMLDivElement>(null);

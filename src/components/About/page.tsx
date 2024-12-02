@@ -1,16 +1,13 @@
-"use client";
-
-import Page from "@/components/template/page-template";
-import { NavLink } from "@/components/organisms/header/atom/nav";
+import Page from "@/components/PageTemplate";
+import { NavLink } from "@/components/atom/nav";
 import styles from "./about.module.scss";
 import Image from "next/image";
-import Footer from "@/components/organisms/footer";
-import Experiences from "@/components/organisms/experience";
+import Footer from "@/components/Home/Footer";
+import Experiences from "@/components/About/Experience";
 import data from "./experiences.json";
 
 const About = () => {
   return (
-    // <div className={styles.background}>
     <Page>
       <Page.Title>About</Page.Title>
       <Page.TitleNav>
@@ -67,7 +64,6 @@ const About = () => {
       </Page.Content>
       <Footer />
     </Page>
-    // </div>
   );
 };
 

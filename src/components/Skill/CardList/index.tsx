@@ -1,6 +1,6 @@
 import React from "react";
-import LanguageSkillCard from "@/components/atom/skill-card";
-import { SkillCardProps } from "@/components/atom/skill-card";
+import LanguageSkillCard from "@/components/Skill/CardList/Card";
+import { SkillCardProps } from "@/components/Skill/CardList/Card";
 import styles from "./skill-card-list.module.scss";
 
 interface SkillCardListProps<T extends string> {

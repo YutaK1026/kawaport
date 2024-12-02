@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./nav.module.scss";
-import { style } from "framer-motion/client";
 
 export const NavLink = () => {
   return (
