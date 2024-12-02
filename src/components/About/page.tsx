@@ -1,5 +1,3 @@
-"use client";
-
 import Page from "@/components/PageTemplate";
 import { NavLink } from "@/components/atom/nav";
 import styles from "./about.module.scss";
