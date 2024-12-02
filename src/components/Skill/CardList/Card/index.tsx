@@ -1,9 +1,6 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./skill-card.module.scss";
-import skill_dict from "./hook";
-import { SkillDict } from "./hook";
 
 export type SkillCard = {
   imgSrc: string;
@@ -19,13 +16,13 @@ export interface SkillCardProps {
 const LanguageSkillCard: React.FC<SkillCardProps> = ({
   props,
 }: SkillCardProps) => {
-  const imgSrc = skill_dict[props.imgSrc as keyof SkillDict];
+  const imgSrc = props.imgSrc;
 
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         <Image
-          src={imgSrc}
+          src={`/skill/${imgSrc}.png`}
           alt={props.name}
           layout="fill"
           objectFit="contain"

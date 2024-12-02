@@ -1,5 +1,5 @@
 import PageTemplate from ".";
-import { NavLink } from "@/components/organisms/header/atom/nav";
+import { NavLink } from "@/components/atom/nav";
 
 const meta = {
   title: "PageTemplate",

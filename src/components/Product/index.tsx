@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Page from "@/components/template/page-template";
-import { NavLink } from "@/components/organisms/header/atom/nav";
-import Footer from "@/components/organisms/footer";
+import Page from "@/components/PageTemplate";
+import { NavLink } from "@/components/atom/nav";
+import Footer from "@/components/Home/Footer";
 import styles from "./product.module.scss";
 import Image from "next/image";
 import data from "@/products/products-list.json";

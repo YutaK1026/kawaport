@@ -1,5 +1,5 @@
-import Product from "@/components/pages/product";
-import TopHeader from "@/components/organisms/top-header";
+import Product from "@/components/Product";
+import TopHeader from "@/components/Home/TopHeader";
 
 const ProductPage = () => {
   return (

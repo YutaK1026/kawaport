@@ -1,5 +1,5 @@
-import Skill from "@/components/pages/skill";
-import TopHeader from "@/components/organisms/top-header";
+import Skill from "@/components/Skill";
+import TopHeader from "@/components/Home/TopHeader";
 
 const SkillPage = () => {
   return (
