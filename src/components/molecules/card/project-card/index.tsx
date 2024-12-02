@@ -4,7 +4,6 @@ import data from "./project-card.json";
 import styles from "./project-card.module.scss";
 import Button from "@/components/atom/button";
 import Image from "next/image";
-import projects from "@/public/project/project-list.png";
 
 const ProjectCard = () => {
   return (
@@ -14,9 +13,11 @@ const ProjectCard = () => {
         <div className={styles.container}>
           <div className={styles.container__left}>
             <Image
-              src={projects}
+              src="/project/project-list.png"
               alt="Picture of the author"
               layout="responsive"
+              width={100}
+              height={100}
               style={{
                 width: "auto",
                 height: "auto",

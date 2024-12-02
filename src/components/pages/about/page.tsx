@@ -4,7 +4,6 @@ import Page from "@/components/template/page-template";
 import { NavLink } from "@/components/organisms/header/atom/nav";
 import styles from "./about.module.scss";
 import Image from "next/image";
-import profilePic from "@/public/kawachan.png";
 import Footer from "@/components/organisms/footer";
 import Experiences from "@/components/organisms/experience";
 import data from "./experiences.json";
@@ -21,9 +20,11 @@ const About = () => {
         <div className={styles.container}>
           <div className={styles.container__left}>
             <Image
-              src={profilePic}
+              src="/kawachan.png"
               alt="Picture of the author"
               layout="responsive"
+              width={100}
+              height={100}
               style={{
                 width: "auto",
                 height: "auto",
