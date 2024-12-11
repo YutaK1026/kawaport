@@ -7,7 +7,7 @@ import data from "./data.json";
 const Skill = () => {
   return (
     <Page>
-      <Page.Title>About</Page.Title>
+      <Page.Title>Skill</Page.Title>
       <Page.TitleNav>
         <NavLink />
       </Page.TitleNav>
