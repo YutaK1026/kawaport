@@ -4,7 +4,7 @@ import React from "react";
 import ProductDetailPage from "@/components/Product/Detail";
 import { ProductData } from "@/types/product";
 
-async function getProductData(id: string): Promise<ProductData | null> {
+function getProductData(id: string): ProductData | null {
   const productDir = path.join(process.cwd(), "src/products");
   const filePath = path.join(productDir, `${id}.json`);
 
@@ -15,17 +15,23 @@ async function getProductData(id: string): Promise<ProductData | null> {
   return null;
 }
 
-type Params = Promise<{ slug: string }>;
+export async function generateStaticParams() {
+  const productsDir = path.join(process.cwd(), "src/products");
+  const fileNames = fs.readdirSync(productsDir);
 
-export default async function Page(props: { params: Params }) {
-  const { slug } = await props.params;
-  const data = await getProductData(slug);
+  return fileNames.map((fileName) => ({
+    slug: fileName.replace(/\.json$/, ""),
+  }));
+}
+
+export default function Page({ params }: { params: { slug: string } }) {
+  const data = getProductData(params.slug);
 
   if (!data) return <div>Product not found</div>;
 
   return (
     <ProductDetailPage>
-      <ProductDetailPage.ProductImage imgUrl={`/project/${slug}.png`} />
+      <ProductDetailPage.ProductImage imgUrl={`/project/${params.slug}.png`} />
       <ProductDetailPage.Title>{data.title}</ProductDetailPage.Title>
       <ProductDetailPage.Content
         leftContent={
@@ -46,15 +52,4 @@ export default async function Page(props: { params: Params }) {
       />
     </ProductDetailPage>
   );
-}
-
-// ビルド時に動的ルートを生成
-export async function generateStaticParams() {
-  const productsDir = path.join(process.cwd(), "src/products");
-  const fileNames = fs.readdirSync(productsDir);
-  const paths = fileNames.map((fileName) => ({
-    params: { slug: fileName.replace(/\.json$/, "") },
-  }));
-
-  return paths;
 }
