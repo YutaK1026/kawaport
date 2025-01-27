@@ -2,7 +2,7 @@
   "title": "ポートフォリオ",
   "skill_stack": "Next.js, Sass, StoryBook",
   "member": "個人",
-  "period": "2024/9",
+  "period": "2024/9 ~ 現在",
   "content": "以前のポートフォリオの設計に不満が出てきたので、作り直したポートフォリオです。\n設計を非常に意識しており、Atomic Designの採用、コンポーネント駆動開発の採用などを積極的にすることで、拡張に開かれ修正に閉じるコードになっています。\n本ポートフォリオを見た後は、是非GitHubのコードも見ていただきたいです。",
   "content__point": "- Atomic Designの採用\n- コンポーネント駆動開発の採用\n- SSGによる爆速レンダリング\n- レスポンシブ化に対応し、スマホでも見れるポートフォリオの実現",
   "github_url": "https://github.com/YutaK1026/kawaport",
