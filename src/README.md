@@ -23,7 +23,6 @@
 
 1. `component/pages/skill/data.json`に、スキルの imgSrc(key), name, description, period を記述する
 2. `public/skill/[skill name]`に、表示したい画像を配置する。
-3. `component/atom/skill-card/hook.ts`に、表示したい画像の path を記述する。path key は先ほど記入した imgSrc に合わせる。
 
 ## 経歴を追加する方法
 

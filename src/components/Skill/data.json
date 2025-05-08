@@ -3,32 +3,32 @@
     {
       "imgSrc": "nextjs",
       "name": "Next.js",
-      "description": "普段フロントエンドを書く際は、ほとんどNext.jsを使用しています。\nNext.jsの大体の使い方は理解しています。",
-      "period": "2 years"
+      "description": "普段フロントエンドを書く際は、ほとんどNext.jsを使用しています。\nNext.js特有の記法などを使うことができます。",
+      "period": "3 years"
     },
     {
       "imgSrc": "typescript",
       "name": "TypeScript",
       "description": "最も得意な言語です。静的型付けが出来ることが大好きで、フロントエンド、バックエンド問わず使うことが出来ます。\nジェネリック型など、TypeScript特有の記法も扱うことができます。",
-      "period": "3 years"
+      "period": "4 years"
     },
     {
       "imgSrc": "sass",
       "name": "Sass",
       "description": "最近使い出したCSSライブラリです。ネスト形式でCSSが記述でき、インポートが直感的なので、使い勝手が良いです。\nテーマカラーなどの設定がしやすいのも好きです。",
-      "period": "2 months"
+      "period": "1 year"
     },
     {
       "imgSrc": "tailwindcss",
       "name": "TailWindCSS",
       "description": "Sassを使う前に使っていたCSSライブラリです。書き始めが楽で、小さいプロジェクトを作る時にはまだ使うことがあります。",
-      "period": "2 years"
+      "period": "3 years"
     },
     {
       "imgSrc": "storybook",
       "name": "StoryBook",
-      "description": "Atomic Designを使う上で、StoryBookが非常に使い勝手が良く、開発体験が向上しています。\nコンポーネント単位で確認ができ、ステート変更も出来て気に入っています。",
-      "period": "2 months"
+      "description": "コンポーネント駆動開発をする上で、StoryBookが非常に使い勝手が良く、開発体験が向上しています。\nコンポーネント単位で確認ができ、ステート変更も出来て気に入っています。",
+      "period": "1 year"
     }
   ],
   "backend": [
@@ -36,7 +36,7 @@
       "imgSrc": "python",
       "name": "Python",
       "description": "使用期間が最も長い言語です。アルゴリズム、機械学習、軽量バックエンドのコードを書く時に使います。",
-      "period": "4 years"
+      "period": "5 years"
     },
     {
       "imgSrc": "fastapi",
@@ -54,7 +54,13 @@
       "imgSrc": "prisma",
       "name": "Prisma",
       "description": "データベースを触りたい時は、Prismaを使っています。\n型が安全で、データベーススキーマの管理が楽なORMで、様々な言語と互換性があり、愛用しています。",
-      "period": "2 years"
+      "period": "3 years"
+    },
+    {
+      "imgSrc": "go",
+      "name": "Go",
+      "description": "最近アルバイトで、バックエンドを書く際にGoを使用しています。\nまだそこまで慣れていないので勉強中です。",
+      "period": "2 months"
     }
   ],
   "others": [
@@ -62,31 +68,31 @@
       "imgSrc": "github",
       "name": "GitHub",
       "description": "プロジェクトは全てGitHubで管理しています。大体の操作は行うことができます。",
-      "period": "4 years"
+      "period": "5 years"
     },
     {
       "imgSrc": "pytorch",
       "name": "PyTorch",
       "description": "研究室の方針で、機械学習をする時はPyTorchを使っています。",
-      "period": "1 years"
+      "period": "1 year"
     },
     {
       "imgSrc": "docker",
       "name": "Docker",
       "description": "仮想環境を作る時はDockerを使っています。開発メンバーが多いプロジェクトほど効果があるので、インターンやチーム開発では使うことが多いです。",
-      "period": "3 years"
+      "period": "4 years"
     },
     {
       "imgSrc": "azure",
       "name": "Azure",
       "description": "クラウドサービスは主にAzureを使っています。インターンで、仮想コンテナサービスの提供をする際にAzureを使用しています。",
-      "period": "1 years"
+      "period": "1 year"
     },
     {
       "imgSrc": "mysql",
       "name": "MySQL",
       "description": "データベースを使いたい時はMySQLを使用しています。基本的なSQLコマンドを記述することはできます。",
-      "period": "2 years"
+      "period": "3 years"
     }
   ]
 }

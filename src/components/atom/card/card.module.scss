@@ -29,6 +29,11 @@
   & &__content {
     margin-left: 24px;
     margin-right: 24px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  & &__content::-webkit-scrollbar {
+    display: none;
   }
 
   & &__footer {

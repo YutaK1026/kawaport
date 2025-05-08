@@ -22,7 +22,7 @@
   {
     "title": "名古屋大学情報学部コンピュータ科学科入学",
     "content": "名古屋大学情報学部コンピュータ科学科に入学しました.",
-    "date": "2021/4 - Now"
+    "date": "2021/4 - 2025/3"
   },
   {
     "title": "アプリ開発団体jack に入部",
@@ -55,7 +55,7 @@
     "date": "2023/11 - 2024/2"
   },
   {
-    "title": "名古屋大学大学院情報学研究科知能システム系合格",
+    "title": "名古屋大学大学院情報学研究科知能システム専攻合格",
     "content": "名古屋大学大学院を受験し、情報学研究科知能システム系に合格しました。",
     "date": "2024/8"
   },
@@ -65,8 +65,18 @@
     "date": "2024/8"
   },
   {
-    "title": "JPHACKS2024 名古屋会場 Best Hack Award受賞",
-    "content": "JPHACK2024で、Best Hack Award(最優秀賞)を受賞しました。受賞作品はOriCubeです。productページにあるので、ぜひ見てください。\n https://kawaport.pages.dev/product/oricube",
+    "title": "JPHACKS2024 Best Hack Award, Best Audience Award受賞",
+    "content": "JPHACK2024で、Best Hack Award(最優秀賞)を受賞しました。受賞作品はOriCubeです。productページにあるので、ぜひ見てください。",
     "date": "2024/10"
+  },
+  {
+    "title": "名古屋大学大学院情報学研究科知能システム学専攻入学",
+    "content": "名古屋大学情報学部知能システム系を卒業し，同大学情報学研究科知能システム学専攻に入学しました。",
+    "date": "2025/4 - Now"
+  },
+  {
+    "title": "株式会社ケイスクワッドで長期アルバイト開始",
+    "content": "株式会社ケイスクワッドにてソフトウェアエンジニアとしてアルバイトを始めました。",
+    "date": "2025/4 - Now"
   }
 ]

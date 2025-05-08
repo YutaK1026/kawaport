@@ -1,4 +1,3 @@
-// import { useTheme } from "next-themes";
 import { ThemeProvider } from "next-themes";
 import "./styles/globals.scss";
 
@@ -15,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="jp">
       <body>
-        <ThemeProvider attribute="data-theme">{children}</ThemeProvider>
+        <ThemeProvider enableSystem={true}>{children}</ThemeProvider>
       </body>
     </html>
   );
