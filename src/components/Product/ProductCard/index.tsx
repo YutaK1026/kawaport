@@ -65,9 +65,17 @@ const ProductCard = ({
         <Image
           src={imageSrc}
           alt={imageAlt}
-          width={300}
-          height={200}
           className={styles.right__image}
+          layout="responsive"
+          width={400}
+          height={300}
+          style={{
+            width: "auto",
+            height: "auto",
+            maxHeight: "400px",
+            maxWidth: "300px",
+            borderRadius: "10px",
+          }}
         />
       </div>
     </div>
