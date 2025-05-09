@@ -1,4 +1,9 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const config: StorybookConfig = {
   stories: ["../src/**/stories.tsx"],
@@ -8,12 +13,26 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/preset-scss",
+    // "@storybook/preset-scss",
+    {
+      name: "@storybook/addon-styling",
+      options: {},
+    },
   ],
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
-  staticDirs: ["../src/public"],
+  staticDirs: ["../public"],
+
+  webpackFinal: async (config) => {
+    config.resolve = config.resolve || {};
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      "@": path.resolve(__dirname, "../"),
+    };
+    return config;
+  },
 };
+
 export default config;

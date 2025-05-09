@@ -5,16 +5,17 @@
   align-items: center;
   padding-top: 0;
   margin: 0;
+  margin-bottom: 3rem;
   justify-content: center;
   align-items: center;
-  z-index: 0; /* 親要素に対してz-indexを0にする */
+  z-index: 0;
 }
 .page::before {
   content: "";
   position: absolute;
   top: 40%;
   left: 50%;
-  z-index: -1; /* 背景が他の要素より背面に表示されるようにする */
+  z-index: -1;
   width: 50%;
   height: 50%;
   border-radius: 15rem;
@@ -28,7 +29,7 @@
     linear-gradient(41deg, #fffce6 4.33%, rgba(255, 252, 230, 0) 73.7%);
   background-blend-mode: normal, normal, normal, normal, normal, normal;
   filter: blur(40px);
-  transform: translate(-50%, -50%); /* 中央に配置 */
+  transform: translate(-50%, -50%);
 }
 
 .productImage {
@@ -37,7 +38,7 @@
   justify-content: center; /* 水平方向に中央揃え */
   width: 60%;
   overflow: hidden;
-  // top: -5vh; // 画像の上部を少し隠すように調整
+  padding-top: 3rem;
 }
 
 .image {

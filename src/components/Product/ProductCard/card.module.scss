@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  border: 1px solid var(--product-card-border-color);
+  justify-content: space-between;
+  border-radius: 10px;
+  height: 400px;
+  background-color: var(--card-background-color);
+  @media (max-width: 950px) {
+    flex-direction: column-reverse;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+.left {
+  flex: 1;
+  margin: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  @media (max-width: 950px) {
+    justify-content: center;
+    max-width: none;
+    align-items: center;
+  }
+
+  &__bottom {
+    margin-top: auto;
+    margin-bottom: 20px;
+    @media (max-width: 950px) {
+      width: 100%;
+    }
+  }
+
+  &__block {
+    margin-bottom: 2rem;
+  }
+
+  &__catchphrase {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: pre-line;
+    color: var(--font-primary-color);
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.7rem;
+    color: var(--font-primary-color);
+    border-bottom: 1px solid var(--text-underline-color);
+  }
+
+  &__link {
+    font-size: 20px;
+    float: right;
+    color: var(--font-primary-color);
+  }
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &__gradient {
+    position: absolute;
+    z-index: 0;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 12rem;
+    background: radial-gradient(
+        77.73% 77.73% at 98.52% 96.25%,
+        #c3b6ff 0%,
+        rgba(160, 140, 255, 0.2) 50.52%,
+        rgba(100, 140, 255, 0) 100%
+      ),
+      radial-gradient(
+        141.73% 105.23% at 50% -7.16%,
+        #e0f2ff 0%,
+        rgba(160, 198, 255, 0.2) 50.73%,
+        rgba(162, 147, 255, 0) 100%
+      ),
+      radial-gradient(
+        112.27% 48.54% at 1.59% 50%,
+        rgba(180, 140, 255, 0.4) 0%,
+        rgba(140, 160, 255, 0.1) 53.91%,
+        rgba(140, 160, 255, 0) 100%
+      ),
+      linear-gradient(153.07deg, #a4b8ff 6.37%, rgba(240, 230, 255, 0) 83.82%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal;
+    filter: blur(35px);
+  }
+
+  &__image {
+    z-index: 1;
+    object-fit: cover;
+    background-color: var(--card-background-color);
+    @media (max-width: 950px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 950px) {
+    &__gradient {
+      display: none;
+    }
+  }
+}
