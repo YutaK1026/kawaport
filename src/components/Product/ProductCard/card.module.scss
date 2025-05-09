@@ -1,10 +1,11 @@
 .card {
   display: flex;
-  border: 1px solid var(--product-card-border-color);
   justify-content: space-between;
   border-radius: 10px;
   height: 400px;
   background-color: var(--card-background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
   @media (min-width: 951px) {
     margin-left: 3rem;
     margin-right: 3rem;
