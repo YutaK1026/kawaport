@@ -33,7 +33,7 @@ const AboutCard = () => {
       </Card.Content>
       <Card.Footer>
         <div className={styles.footer}>
-          <Button content="詳細はこちら" path="/about" />
+          <Button content="詳細はこちら >>>" path="/about" />
         </div>
       </Card.Footer>
     </Card>
