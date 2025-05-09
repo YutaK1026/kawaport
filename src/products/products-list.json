@@ -2,36 +2,43 @@
   {
     "title": "ポートフォリオ",
     "key": "portfolio",
-    "alt": "portfolio"
+    "alt": "portfolio",
+    "tagList": ["個人開発", "Webアプリ"]
   },
   {
     "title": "CODE_DUEL",
     "key": "code_duel",
-    "alt": "code_duel"
+    "alt": "code_duel",
+    "tagList": ["チーム開発", "Webアプリ", "ゲーム", "ハッカソン"]
   },
   {
     "title": "HYOKA",
     "key": "hyoka",
-    "alt": "hyoka"
+    "alt": "hyoka",
+    "tagList": ["チーム開発", "Webアプリ", "ハッカソン"]
   },
   {
     "title": "LaTeX Index",
     "key": "latex_index",
-    "alt": "latex_index"
+    "alt": "latex_index",
+    "tagList": ["個人開発", "Webアプリ"]
   },
   {
     "title": "jackFesオープニング",
     "key": "jackFesOP",
-    "alt": "jackFesOP"
+    "alt": "jackFesOP",
+    "tagList": ["個人開発", "Webアプリ", "ネタ"]
   },
   {
     "title": "旧ポートフォリオ",
     "key": "portfolio_old",
-    "alt": "portfolio_old"
+    "alt": "portfolio_old",
+    "tagList": ["個人開発", "Webアプリ"]
   },
   {
     "title": "OriCube",
     "key": "oricube",
-    "alt": "oricube"
+    "alt": "oricube",
+    "tagList": ["チーム開発", "Webアプリ", "ハッカソン"]
   }
 ]

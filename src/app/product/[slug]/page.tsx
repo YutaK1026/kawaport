@@ -3,6 +3,8 @@ import path from "path";
 import React from "react";
 import ProductDetailPage from "@/components/Product/Detail";
 import { ProductData } from "@/types/product";
+import Footer from "@/components/Home/Footer";
+import TopHeader from "@/components/Home/TopHeader";
 
 function getProductData(id: string): ProductData | null {
   const productDir = path.join(process.cwd(), "src/products");
@@ -30,26 +32,32 @@ export default function Page({ params }: { params: { slug: string } }) {
   if (!data) return <div>Product not found</div>;
 
   return (
-    <ProductDetailPage>
-      <ProductDetailPage.ProductImage imgUrl={`/project/${params.slug}.png`} />
-      <ProductDetailPage.Title>{data.title}</ProductDetailPage.Title>
-      <ProductDetailPage.Content
-        leftContent={
-          <ProductDetailPage.LeftContent
-            skillStack={data.skill_stack}
-            member={data.member}
-            period={data.period}
-            githubUrl={data.github_url}
-            url={data.url}
-          />
-        }
-        rightContent={
-          <ProductDetailPage.RightContent
-            content={data.content}
-            contentPoint={data.content__point}
-          />
-        }
-      />
-    </ProductDetailPage>
+    <div>
+      <TopHeader />
+      <ProductDetailPage>
+        <ProductDetailPage.ProductImage
+          imgUrl={`/project/${params.slug}.png`}
+        />
+        <ProductDetailPage.Title>{data.title}</ProductDetailPage.Title>
+        <ProductDetailPage.Content
+          leftContent={
+            <ProductDetailPage.LeftContent
+              skillStack={data.skill_stack}
+              member={data.member}
+              period={data.period}
+              githubUrl={data.github_url}
+              url={data.url}
+            />
+          }
+          rightContent={
+            <ProductDetailPage.RightContent
+              content={data.content}
+              contentPoint={data.content__point}
+            />
+          }
+        />
+      </ProductDetailPage>
+      <Footer />
+    </div>
   );
 }

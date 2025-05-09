@@ -17,6 +17,8 @@ body {
   --arrow-bottom: #000000;
   --title-border-color: #23282f;
   --text-underline-color: #23282f;
+  --product-card-color: #cbebfc;
+  --product-card-border-color: #23282f;
 }
 
 [data-theme="dark"] {
@@ -32,4 +34,6 @@ body {
   --arrow-bottom: #ffffff;
   --title-border-color: #719ddc;
   --text-underline-color: #719ddc;
+  --product-card-color: #f7f7f7;
+  --product-card-border-color: #23282f;
 }
