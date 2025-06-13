@@ -2,19 +2,18 @@
 
 ## プロダクトを追加する方法
 
-1. `/component/pages/product/products.json`に、プロダクトのタイトル、key、alt などを記述する
+1. `src/product/products-list.json`に、プロダクトのタイトル、key、alt などを記述する
 2. `public/project/[product name]`に、表示したい画像を配置する。
-3. `/component/pages/product/hook.ts`に、プロダクトの表示画像の path を記述し、import するようにコードを修正する
-4. `src/app/product/[page name]`に、表示したいプロダクトのページを作成し、中の data.json にプロダクト詳細に記入したい内容を書く。
+3. `src/product/[page name]`に、表示したいプロダクトのページを作成し、中の data.json にプロダクト詳細に記入したい内容を書く。
 
 ## スキルを追加する方法
 
-1. `component/pages/skill/data.json`に、スキルの imgSrc(key), name, description, period を記述する
+1. `component/Skill/data.json`に、スキルの imgSrc(key), name, description, period を記述する
 2. `public/skill/[skill name]`に、表示したい画像を配置する。
 
 ## 経歴を追加する方法
 
-1. `src/components/pages/about/experiences.json`に、他経歴とフォーマットを揃えて追加する
+1. `src/components/About/experiences.json`に、他経歴とフォーマットを揃えて追加する
 
 # プロダクトに関する説明
 
