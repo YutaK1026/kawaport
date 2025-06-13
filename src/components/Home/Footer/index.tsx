@@ -27,7 +27,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
         </a>
         <a
-          href="https://x.com/inheritans1904"
+          href="https://x.com/kawachann1026"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.iconLink}
