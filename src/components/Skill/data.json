@@ -4,31 +4,31 @@
       "imgSrc": "nextjs",
       "name": "Next.js",
       "description": "普段フロントエンドを書く際は、ほとんどNext.jsを使用しています。\nNext.js特有の記法などを使うことができます。",
-      "period": "3 years"
+      "period": "4 years"
     },
     {
       "imgSrc": "typescript",
       "name": "TypeScript",
       "description": "最も得意な言語です。静的型付けが出来ることが大好きで、フロントエンド、バックエンド問わず使うことが出来ます。\nジェネリック型など、TypeScript特有の記法も扱うことができます。",
-      "period": "4 years"
+      "period": "5 years"
     },
     {
       "imgSrc": "sass",
       "name": "Sass",
       "description": "最近使い出したCSSライブラリです。ネスト形式でCSSが記述でき、インポートが直感的なので、使い勝手が良いです。\nテーマカラーなどの設定がしやすいのも好きです。",
-      "period": "1 year"
+      "period": "2 year"
     },
     {
       "imgSrc": "tailwindcss",
       "name": "TailWindCSS",
       "description": "Sassを使う前に使っていたCSSライブラリです。書き始めが楽で、小さいプロジェクトを作る時にはまだ使うことがあります。",
-      "period": "3 years"
+      "period": "4 years"
     },
     {
       "imgSrc": "storybook",
       "name": "StoryBook",
       "description": "コンポーネント駆動開発をする上で、StoryBookが非常に使い勝手が良く、開発体験が向上しています。\nコンポーネント単位で確認ができ、ステート変更も出来て気に入っています。",
-      "period": "1 year"
+      "period": "2 year"
     }
   ],
   "backend": [
@@ -36,13 +36,13 @@
       "imgSrc": "python",
       "name": "Python",
       "description": "使用期間が最も長い言語です。アルゴリズム、機械学習、軽量バックエンドのコードを書く時に使います。",
-      "period": "5 years"
+      "period": "6 years"
     },
     {
       "imgSrc": "fastapi",
       "name": "FastAPI",
       "description": "Pythonでバックエンドを書く時にはこれを愛用しています。\n私がPythonで書くバックエンドは軽量なので、FastAPIの機能で満足しています。",
-      "period": "3 years"
+      "period": "4 years"
     },
     {
       "imgSrc": "nestjs",
@@ -60,7 +60,7 @@
       "imgSrc": "go",
       "name": "Go",
       "description": "最近アルバイトで、バックエンドを書く際にGoを使用しています。\nまだそこまで慣れていないので勉強中です。",
-      "period": "2 months"
+      "period": "1 year"
     }
   ],
   "others": [
@@ -68,7 +68,7 @@
       "imgSrc": "github",
       "name": "GitHub",
       "description": "プロジェクトは全てGitHubで管理しています。大体の操作は行うことができます。",
-      "period": "5 years"
+      "period": "6 years"
     },
     {
       "imgSrc": "pytorch",
@@ -86,7 +86,7 @@
       "imgSrc": "azure",
       "name": "Azure",
       "description": "クラウドサービスは主にAzureを使っています。インターンで、仮想コンテナサービスの提供をする際にAzureを使用しています。",
-      "period": "1 year"
+      "period": "2 year"
     },
     {
       "imgSrc": "mysql",
