@@ -32,6 +32,7 @@ export const ImageSlider = ({ images }: SlidersProps) => {
         {images.map((image: Images) => {
           return (
             <Image
+              key={image.name}
               src={image.src}
               alt={image.alt}
               className={styles.image__box}

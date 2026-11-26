@@ -6,7 +6,7 @@ export const Title = () => {
       <div className={styles.header__title__contentAnimation}>Hello</div>
       <br />
       <div className={styles.header__title__contentAnimation}>
-        I'm Yuta Kawamura
+        I&apos;m Yuta Kawamura
       </div>
     </h1>
   );

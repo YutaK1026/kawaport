@@ -20,6 +20,8 @@ const MAX_CATCHPHRASES = 3;
 const MAX_CHAR_PER_PHRASE = 15;
 
 // キャッチフレーズの長さが規定を超えた場合の処理を行う
+// キャッチフレーズ表示を再開するときに使うため残している
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const formatCatchphrases = (list: string[]): string[] => {
   return list
     .slice(0, MAX_CATCHPHRASES)
@@ -31,7 +33,8 @@ const formatCatchphrases = (list: string[]): string[] => {
 };
 
 const ProductCard = ({
-  catchphraseList,
+  // キャッチフレーズ表示を再開するときは以下を戻す
+  // catchphraseList,
   tagList,
   title,
   imageSrc,
@@ -52,7 +55,7 @@ const ProductCard = ({
         </div> */}
         <div className={styles.left__bottom}>
           {tagList.map((tag) => {
-            return <TagContent tagTitle={tag} />;
+            return <TagContent key={tag} tagTitle={tag} />;
           })}
           <p className={styles.left__title}>{title}</p>
           <Link href={link} className={styles.left__link}>

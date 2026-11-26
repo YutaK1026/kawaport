@@ -20,7 +20,7 @@ const Product = () => {
         <div className={styles.container}>
           {data.map((prop) => {
             return (
-              <div className={styles.cards}>
+              <div key={prop.key} className={styles.cards}>
                 <ProductCard
                   tagList={prop.tagList as Tag[]}
                   title={prop.title}

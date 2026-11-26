@@ -20,6 +20,7 @@ const Experiences = ({ experiences }: ExperienceProps) => {
       {experiences.map((prop) => {
         return (
           <VerticalTimelineElement
+            key={`${prop.date}-${prop.title}`}
             visible={true}
             className="vertical-timeline-element--work"
             contentStyle={{
