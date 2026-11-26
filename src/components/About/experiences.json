@@ -77,7 +77,17 @@
   {
     "title": "株式会社ケイスクワッドで長期アルバイト開始",
     "content": "株式会社ケイスクワッドにてソフトウェアエンジニアとしてアルバイトを始めました。",
-    "date": "2025/4 - Now"
+    "date": "2025/4 - 2025/12"
+  },
+  {
+    "title": "JAMIT 2025 発表",
+    "content": "JAMIT 2025にて，縦隔部CT像の位置合わせを用いたリンパ節領域マップの推定に関する発表を行いました．",
+    "date": "2025/8"
+  },
+  {
+    "title": "Google AI学生アンバサダーに就任",
+    "content": "Google AI学生アンバサダーに就任しました。AIに関する情報発信やイベントの企画を行います。",
+    "date": "2025/8 - 2026/3"
   },
   {
     "title": "LINEヤフー株式会社 インターン",
@@ -90,18 +100,23 @@
     "date": "2025/10"
   },
   {
-    "title": "Google AI学生アンバサダーに就任",
-    "content": "Google AI学生アンバサダーに就任しました。AIに関する情報発信やイベントの企画を行います。",
-    "date": "2025/8 - 2026/3"
-  },
-  {
     "title": "LayerX AiWインターン",
-    "content": "LayerX社にて，AiWorkforce部門にてSWEとして従事しています．",
-    "date": "2025/12 - Now"
+    "content": "LayerX社にて，AiWorkforce部門にてSWEとして従事しました．",
+    "date": "2025/12 - 2026/6"
   },
   {
     "title": "SPIE　Medical Imaging 2026 発表",
     "content": "SPIE Medical Imaging 2026にて，AIを利用したリンパ節領域マップの自動推定研究に関するポスター発表を行いました．",
     "date": "2026/2"
+  },
+  {
+    "title": "JAMIT 2026 発表",
+    "content": "JAMIT 2026にて，リンパ節領域マップの自動推定研究に関する発表を行いました．",
+    "date": "2026/8"
+  },
+  {
+    "title": "UNAIITインターン",
+    "content": "UNAIIT社にて，フルスタックエンジニアとして従事しています．",
+    "date": "2026/8 - Now"
   }
 ]
